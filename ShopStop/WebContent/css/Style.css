@@ -1,0 +1,529 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+/*global css*/
+
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+	padding:0;
+  width: 100%;
+  height: 6em;
+  background: white;
+}
+
+body{
+  height: auto;
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 4400;
+
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  overflow: hidden;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h3{
+  padding:0;
+  margin: 0;
+}
+
+.container > h4{
+  border: 0px solid rgb(54, 37, 24);
+  font-size: 30px;
+  padding: 10px 10px;
+  margin: 5px;
+  float: left;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.websiteLogo{
+  float:left;
+  margin-top: 6px;
+  height:5em;
+  width: auto;
+}
+
+nav {
+  float: left;
+}
+
+/* NAVBAR STYLING */
+/* left navbar */
+
+
+
+.company-name{
+  display: inline-block;
+  font-size: 2em;
+  padding-left: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  
+
+}
+/* right navbar */
+
+.navbar {
+  float: right;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0 0 0 0px;
+  list-style: none;
+}
+
+.navbar li {
+
+  display: inline-block;
+  height:auto;
+  margin-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  text-decoration: none;
+}
+
+ li a {
+  color: black;
+  text-decoration: none;
+
+  /*text-transform: uppercase; */
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+nav a:hover {
+  color: darkorange;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #eb6020;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.mySlides {display:none}
+
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+
+.w3-badge {height:13px;width:13px;padding:0}
+#prbtn {
+  background-color: #eb6020;
+  color: white;
+  padding: 8px 25px;
+}
+
+/* HOME PAGE cover and intro*/
+
+#homepage{
+  display:inline-flex;
+  align-items:center;
+  width:100%;
+  height:38em;
+  background-color: #9cdaf8;
+  background-image: linear-gradient(315deg, #9cdaf8 0%, #98fcbd 74%);
+
+}
+
+
+
+.matterContainer{
+  width: 60%;
+  padding: 0;
+}
+
+#slogan {
+ 
+  float: left;
+  width: 50%;
+  font-weight: 700;
+  font-size: 2.4em;
+  font-family: 'Roboto', sans-serif;
+  color: #702F1A;
+}
+
+#sloganInfo {
+  display: inline-flex;
+  width: 55%;
+  
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: black;
+}
+
+.illustratorContainer{
+  
+  float: right;
+
+
+}
+
+.illustrationClass{
+  width: 10em;
+  height: auto;
+}
+
+
+#coverButtons{
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+
+#Work {
+  float: left;
+  background-color: #0000A0;
+  border: 2px solid white;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+
+
+}
+
+#Hire {
+  float: left;
+  color: white;
+  background-color: #ff6700;
+  padding: 17px 27px;
+  text-decoration: none;
+
+}
+
+#Work:hover {
+  background-color: #09006f ;
+}
+
+#Hire:hover{
+  background-color: #A96E00;
+}
+
+/* How it works */
+
+#howitworks{
+  min-height: 600px;
+  width: 100%;
+
+}
+
+#howitworks-info-container{
+ float: left;
+ margin-top: 200px;
+ width: 50%;
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px;
+ font-weight: 700;
+
+}
+
+#howitworks-ans-container{
+  float:left;
+  text-align: justify;
+  margin-top: 50px;
+  width: 100%;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size:22px;
+}
+
+
+.howitworks {
+  display:flex;
+  align-items:center;
+}
+
+
+
+#homeLawyer{
+  width: 40%;
+  height: auto;
+  position: relative;
+  float: right;
+  margin-top: 8em;
+  
+}
+
+
+/*login Page styling */
+
+#loginheader{
+  padding: 0;
+  margin-top: 10px;
+}
+
+#loginBody{
+  background: radial-gradient(#939393,#7e7e7e);
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.layout{
+  position: relative;
+  background-color: white;
+  margin: 25px auto;
+  height: 675px;
+  width: 400px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.55), 0 10px 10px rgba(0,0,0,0.52);
+}
+
+.logincontainer{
+ position: absolute;
+ height: inherit;
+ width: inherit;
+}
+
+#login-websiteLogo{
+  width: 180px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 108px;
+}
+
+#greeting{
+  position: absolute;
+  width:100%;
+  padding: 0;
+  margin-top: 60px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 600;
+}
+
+
+
+.loginpage h1{
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
+
+#loginfields{
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 7em;
+}
+
+#loginfields ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+#loginfields li{
+  text-decoration: none;
+  padding: 10px;
+}
+
+input{
+  width: 300px;
+  height: 50px;
+  border: 0.5px solid black;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 0.2em;
+}
+
+#Login{
+  background-color: blue;
+  color:white;
+  border:none;
+  font-size: 18px;
+  font-family: 'Roboto',sans-serif;
+  margin-top: 30px;
+  width: 320px;
+}
+
+#Login:hover{
+  background-color: #000096 ;
+}
+
+#loginfields a{
+  position: relative;
+  float:right;
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+#loginfields a:hover{
+  text-decoration: underline;
+}
+
+#signupLink{
+  display: block;
+  text-align: center;
+  padding-top: 70px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+#signupLink:hover{
+  font-weight: 600;
+}
+
+#homefooter{
+  background-color: black;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Archivo', sans-serif;
+  color: white;
+  padding: 20px 0;
+
+}
+
+
+
+#adminlogin{
+  text-decoration: none;
+  color: blue;
+  text-align: center;
+}
+
+#adminlogin:hover{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.viewusers{
+  background-color: cyan;
+  height: 660px;
+}
+
+.search{
+  float: left;
+}
+
+.searchbar{
+  width: 595px;
+  height: 40px;
+
+}
+
+.searchbtn{
+  height: 40px;
+  background-color: Black;
+  color: white;
+}
+
+.deletebtn {
+  height: 40px;
+  background-color: #FF4500;
+  color: white;
+}
+
+.deletebtn:hover{
+  background-color: red;
+
+}
+
+
+table{
+  width: 100%;
+  background: white;
+}
+
+ th {
+  border:1px solid black;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 0;
+}
+
+ td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 0;
+}
+
+th {
+padding: 0 60px;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.delete{
+  background-color: #ff1919;
+  text-transform: uppercase;
+  height: 20px;
+  width: 100px;
+}
+
+.delete:hover{
+  color: white;
+
+}
+
+/*media queries*/
+@media(max-width:762px){
+  header ,
+  header nav,
+  header nav li,
+  .container
+  .homepage
+  .howitworks
+  {
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  .howitworks-info-container{
+    width:100%;
+    margin:0;
+    text-align: center;
+  }
+}
